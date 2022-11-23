@@ -1,0 +1,33 @@
+body{
+    background-color: darkslategray;
+}
+.title {
+    font-size: 80px;
+    color: aliceblue;
+    background-color: darkslategray;
+}
+.box-container{
+    background-color: darkslategray;
+    display: flex;
+}
+.box{
+    background-color: aquamarine;
+    border: 2px solid #6a418f;
+    flex-shrink: 1;
+    font-size: 30px;
+    color: #0d3d3d;
+}
+.box1{
+}
+.box2{
+}
+.box3{
+}
+.box4{
+    flex-grow: 1;
+    text-align: end;
+}
+
+* {
+    box-sizing: border-box;
+}
