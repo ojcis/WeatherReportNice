@@ -5,7 +5,7 @@ require_once 'vendor/autoload.php';
 use App\ApiClient;
 use Carbon\Carbon;
 
-const API_KEY='cf60e647aafa33c963a3f5a489d1964b';//ad your key!
+const API_KEY='';//ad your key!
 
 $apiClient=new ApiClient(API_KEY);
 $weather = $apiClient->getWeather($_GET['city'] ?? 'Riga');
