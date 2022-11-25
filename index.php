@@ -5,9 +5,10 @@ require_once 'vendor/autoload.php';
 use App\ApiClient;
 use Carbon\Carbon;
 
-const API_KEY='';//ad your key!
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
-$apiClient=new ApiClient(API_KEY);
+$apiClient=new ApiClient($_ENV['API_KEY']);
 $weather = $apiClient->getWeather($_GET['city'] ?? 'Riga');
 
 $time=Carbon::now();

@@ -52,7 +52,11 @@ a {
     text-align: end;
 }
 input[type=text] {
-    background-color: aquamarine;
-    color: black;
+    background-color: #026b6b;
+    color: white;
     font-size: 25px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
 }
