@@ -2,6 +2,9 @@
 
 namespace App;
 
+use App\Models\Location;
+use App\Models\Weather;
+
 class ApiClient
 {
     private string $apiKey;
